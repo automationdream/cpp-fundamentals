@@ -1,6 +1,20 @@
 #include <iostream>
 
-// Write your function here
+int max(int a, int b, int c){
+    int max_value;
+    if (a >= b) {
+        max_value = a;
+    } else {
+        max_value = b;
+    }
+
+    if (max_value < c) {
+        max_value = c;
+    }
+
+    return max_value;
+
+};
 
 int main() {
     std::cout << "max (1, 2, 3): " << max (1, 2, 3) << "\n";
