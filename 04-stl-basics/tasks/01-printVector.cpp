@@ -3,7 +3,7 @@
 #include <string>
 
 void printVector(const std::vector<std::string> &vec){
-    for (auto element:vec){
+    for (const auto element:vec){
         std::cout << element << '\n';
     };
 }
